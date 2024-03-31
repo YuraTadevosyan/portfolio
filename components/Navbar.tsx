@@ -34,7 +34,7 @@ const Navbar = () => {
         </Link>
 				
         <ul
-          className={`list-none hidden sm:${path === '/' ? 'flex' : 'hidden'} flex-row gap-10`}
+          className={`list-none hidden ${path === '/' ? 'sm:flex' : 'sm:hidden'} flex-row gap-10`}
         >
           {navLinks.map((navLink) => {
             return (

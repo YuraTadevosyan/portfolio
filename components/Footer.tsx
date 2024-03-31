@@ -34,8 +34,8 @@ const Footer = () => {
                   <Image
                     alt={socialLink.name}
                     src={socialLink.icon}
-                    width={24}
-                    height={24}
+                    width={32}
+                    height={32}
                   />
                 </Link>
               </li>

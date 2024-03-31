@@ -39,17 +39,17 @@ export const navLinks = [
 ]
 const socialLinks = [
   {
-    name: 'github',
+    name: 'GitHub',
     url: 'https://github.com/YuraTadevosyan',
     icon: github,
   },
   {
-    name: 'upwork',
+    name: 'Upwork',
     url: 'https://www.upwork.com/freelancers/~0134a92d367ebe3df8',
     icon: freelance,
   },
   {
-    name: 'telegram',
+    name: 'Telegram',
     url: 'https://t.me/YuraTadevosyan',
     icon: telegram,
   },
@@ -57,11 +57,11 @@ const socialLinks = [
 
 const services = [
   {
-    title: 'Web Developer',
+    title: 'JavaScript Developer',
     icon: web,
   },
   {
-    title: 'React Native Developer',
+    title: 'Layout Designer',
     icon: mobile,
   },
 ]

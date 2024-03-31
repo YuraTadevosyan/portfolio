@@ -13,6 +13,18 @@
     color-scheme: dark;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: transparent;
+}
+
+::-webkit-scrollbar
+{
+    width: 0;
+    background-color: transparent;
+}
+
 .section-wrapper {
     @apply sm:p-16 px-6 py-10 z-0 relative max-w-7xl mx-auto
 }

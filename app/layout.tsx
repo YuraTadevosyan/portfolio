@@ -2,7 +2,7 @@ import type { Metadata } from "next"
 import { Poppins } from "next/font/google"
 
 import "./globals.css"
-import { Navbar, Hero, Footer } from '@/components'
+import { Navbar, Footer } from '@/components'
 
 const poppins = Poppins({ subsets: ['latin'], weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'] })
 
@@ -22,13 +22,10 @@ export default function RootLayout({
       suppressHydrationWarning={true}
     >
       <body
-        className={`${poppins.className} relative z-0 bg-primary`}
+        className={`${poppins.className} relative z-0 bg-primary min-h-screen flex flex-col justify-between`}
         suppressHydrationWarning={true}
       >
-        <div className="bg-hero-pattern bg-cover bg-center bg-no-repeat">
-          <Navbar />
-          <Hero />
-        </div>
+        <Navbar />
         {children}
         <Footer />
       </body>

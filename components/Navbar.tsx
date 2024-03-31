@@ -2,10 +2,13 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { usePathname } from 'next/navigation'
 
 import { navLinks } from '@/constants'
 
 const Navbar = () => {
+  const path = usePathname()
+	
   const [active, setActive] = useState('')
   const [toggle, setToggle] = useState(false)
 	
@@ -30,7 +33,9 @@ const Navbar = () => {
           <p className="text-white text-[18px] font-bold cursor-pointer">Yura Tadevosyan</p>
         </Link>
 				
-        <ul className="list-none hidden sm:flex flex-row gap-10">
+        <ul
+          className={`list-none hidden sm:${path === '/' ? 'flex' : 'hidden'} flex-row gap-10`}
+        >
           {navLinks.map((navLink) => {
             return (
               <li
@@ -48,7 +53,9 @@ const Navbar = () => {
           })}
         </ul>
 				
-        <div className="sm:hidden flex flex-1 items-center justify-end">
+        <div
+          className={`sm:hidden ${path === '/' ? 'flex' : 'hidden'} flex-1 items-center justify-end`}
+        >
           <Image
             width={28}
             height={28}

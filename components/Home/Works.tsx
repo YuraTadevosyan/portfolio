@@ -46,7 +46,7 @@ const Works = () => {
           href="https://github.com/YuraTadevosyan"
           className="text-secondary transition-colors duration-500 hover:text-white"
         >
-					See More
+					See more on my GitHub
         </Link>
       </motion.div>
     </>

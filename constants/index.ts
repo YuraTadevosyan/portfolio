@@ -163,6 +163,12 @@ const testimonials = [
     designation: 'Client',
     company: 'Upwork',
   },
+  {
+    testimonial: "Yura was a diligent worker who consistently demonstrated a good work ethic. His proficiency in English was adequate for all required written and spoken tasks. Additionally, he often brought valuable ideas to the table, contributing positively to our team’s dynamic. I only ended the contract due to budget constraints, I wish I didn't have to let him go.",
+    name: 'Chad Michael Lawson',
+    designation: 'Client',
+    company: 'Upwork',
+  },
 ]
 
 const projects = [

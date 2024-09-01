@@ -19,6 +19,7 @@ import {
   aQuiz,
   aninfo,
   imagePicker,
+  liveDox,
   github,
   telegram,
 } from '@/public/images'
@@ -191,7 +192,7 @@ const projects = [
     ],
     image: aQuiz,
     source_code_link: 'https://github.com/aquizadmin/aQuiz',
-    site_link: 'https://github.com/YuraTadevosyan/nuxt-image-picker',
+    site_link: '',
   },
   {
     name: 'aninfo',
@@ -212,7 +213,7 @@ const projects = [
     ],
     image: aninfo,
     source_code_link: 'https://github.com/YuraTadevosyan/aninfo',
-    site_link: 'https://github.com/YuraTadevosyan/nuxt-image-picker',
+    site_link: '',
   },
   {
     name: 'Image Picker',
@@ -233,7 +234,28 @@ const projects = [
     ],
     image: imagePicker,
     source_code_link: 'https://github.com/YuraTadevosyan/nuxt-image-picker',
-    site_link: 'https://github.com/YuraTadevosyan/nuxt-image-picker',
+    site_link: 'https://rainbow-khapse-ae92c4.netlify.app/',
+  },
+  {
+    name: 'Live Dox',
+    description: 'Live Docs is a real-time collaborative document editing platform that allows multiple users to create and edit documents simultaneously, with live updates and seamless synchronization. Perfect for teams needing efficient, collaborative document management.',
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'shadcn',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'liveblocks',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: liveDox,
+    source_code_link: 'https://github.com/YuraTadevosyan/live-docs',
+    site_link: 'https://live-docs-eight-rouge.vercel.app/',
   },
 ]
 

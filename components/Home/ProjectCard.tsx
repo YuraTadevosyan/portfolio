@@ -5,7 +5,7 @@ import Tilt from 'react-parallax-tilt'
 import { motion } from 'framer-motion'
 import { StaticImageData } from 'next/image'
 
-import { github } from '@/public/images'
+import { github, url } from '@/public/images'
 import { fadeIn } from '@/utils/motion'
 
 interface ProjectTag {
@@ -20,9 +20,10 @@ interface Project {
 	image: StaticImageData
 	tags: ProjectTag[]
 	source_code_link: string
+	site_link: string
 }
 
-const ProjectCard = ({ index, name, description, image, tags, source_code_link }: Project) => {
+const ProjectCard = ({ index, name, description, image, tags, source_code_link, site_link }: Project) => {
   return (
     <motion.div
       variants={fadeIn('up', 'spring', 0.5 * index, 0.75)}
@@ -45,19 +46,35 @@ const ProjectCard = ({ index, name, description, image, tags, source_code_link }
          	/>
 					
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            <Link
-              href={source_code_link}
-              target="_blank"
-              className="black-gradient w-10 h-10 rounded-full flex items-center justify-center"
-            >
-              <Image
-                src={github}
-                alt="Project's github"
-                className="w-1/2 h-1/2 object-contain"
-                width={20}
-                height={20}
-              />
-            </Link>
+            {site_link ? (
+              <Link
+                href={site_link}
+                target="_blank"
+                className="black-gradient w-10 h-10 rounded-full flex items-center justify-center"
+              >
+                <Image
+                  src={url}
+                  alt="Project's github"
+                  className="w-1/2 h-1/2 object-contain"
+                  width={20}
+                  height={20}
+                />
+              </Link>
+            ) : (
+              <Link
+                href={source_code_link}
+                target="_blank"
+                className="black-gradient w-10 h-10 rounded-full flex items-center justify-center"
+              >
+                <Image
+                  src={github}
+                  alt="Project's github"
+                  className="w-1/2 h-1/2 object-contain"
+                  width={20}
+                  height={20}
+                />
+              </Link>
+            )}
           </div>
         </div>
 					

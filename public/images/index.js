@@ -1,6 +1,7 @@
 import mobile from './mobile.png'
 import web from './web.png'
 import github from './github.png'
+import url from './url.svg'
 import telegram from './telegram.svg'
 import menu from './menu.svg'
 import close from './close.svg'
@@ -22,11 +23,13 @@ import freelance from './company/upwork.webp'
 import aQuiz from './projects/aQuiz.webp'
 import aninfo from './projects/aninfo.webp'
 import imagePicker from './projects/imagePicker.webp'
+import liveDox from './projects/liveDox.webp'
 
 export {
   mobile,
   web,
   github,
+  url,
   telegram,
   menu,
   close,
@@ -48,4 +51,5 @@ export {
   aQuiz,
   aninfo,
   imagePicker,
+  liveDox
 }

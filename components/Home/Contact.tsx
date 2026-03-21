@@ -29,9 +29,19 @@ const Contact = () => {
 	
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+
+    if (!Object.values(form).every(Boolean)) {
+      setResponse({ type: 'error', message: 'Please fill the fields'})
+
+      setTimeout(() => {
+        setResponse({ type: '', message: ''})
+      }, 3500)
+
+      return
+    }
+
     setLoading(true)
-		
-		
+
     emailjs
       .send(
         process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE_ID || '',
@@ -49,19 +59,21 @@ const Contact = () => {
         () => {
           setLoading(false)
           setResponse({ type: 'success', message: 'Thanks. I will get back to you ASAP.'})
-				
+
           setForm({
             name: "",
             email: "",
             message: "",
           })
-					
+
           setTimeout(() => {
             setResponse({ type: '', message: ''})
           }, 3500)
         },
         (error) => {
           setLoading(false)
+
+          console.error(error)
 					
           setResponse({ type: 'error', message: 'Ahh, something went wrong. Please try again.'})
 					

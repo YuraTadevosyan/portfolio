@@ -22,6 +22,10 @@ import {
   liveDox,
   github,
   telegram,
+  textComparer,
+  articleBuilder,
+  euka,
+  gsap
 } from '@/public/images'
 
 export const navLinks = [
@@ -170,9 +174,36 @@ const testimonials = [
     designation: 'Client',
     company: 'Upwork',
   },
+  {
+    testimonial: "Yura is an amazing full stack developer that has gone above and beyond to produce great work. He has help build core features and improvements to our marketing platform AI SaaS",
+    name: 'Kevin Wang',
+    designation: 'Founder',
+    company: 'Euka.ai',
+  },
 ]
 
 const projects = [
+  {
+    name: 'Euka.ai',
+    description: "At Euka AI, we've built the intelligent infrastructure that's defining the future of social commerce. Our AI-powered platform helps leading TikTok Shop brands discover, connect with, and manage creator relationships at scale – turning authentic content into measurable sales growth.",
+    tags: [
+      {
+        name: 'nextjs',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'supabase',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'ai',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: euka,
+    source_code_link: '',
+    site_link: 'https://www.euka.ai/',
+  },
   {
     name: 'a Quiz',
     description: 'A dynamic platform offering engaging quizzes across various categories, competitive leaderboards, and a diverse library of free books. Users can login, test their knowledge, compete with friends, and explore a wide range of literary works, see their result in the leaderboard.',
@@ -256,6 +287,69 @@ const projects = [
     image: liveDox,
     source_code_link: 'https://github.com/YuraTadevosyan/live-docs',
     site_link: 'https://live-docs-eight-rouge.vercel.app/',
+  },
+  {
+    name: 'Text Comparer',
+    description: 'TextComparer - A modern, fully client-side text comparison tool built with React 19, TypeScript, Vite, and Tailwind CSS v4. It delivers line-level diffing with similarity scoring, persistent history, performance insights, light/dark themes, and keyboard shortcuts - all wrapped in a polished, animated UI powered by Motion.',
+    tags: [
+      {
+        name: 'stitch',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'aistudio',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: textComparer,
+    source_code_link: 'https://github.com/YuraTadevosyan/text-comparer',
+    site_link: 'https://yuratadevosyan.github.io/text-comparer/',
+  },
+  {
+    name: 'Article Builder',
+    description: 'Article Builder - An opinionated long-form editor built with React 19, TypeScript 6, Vite 8, Tailwind v4 and Shadcn UI. Block-based contenteditable surface, live preview, image upload, and an AI assistant that talks to OpenAI or Anthropic from the browser. Five color schemes × light/dark, WCAG AA contrast, and Cypress.',
+    tags: [
+      {
+        name: 'claudedesign',
+        color: 'white-text-gradient',
+      },
+      {
+        name: 'claudecode',
+        color: 'orange-text-gradient',
+      },
+      {
+        name: 'cypress',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: articleBuilder,
+    source_code_link: 'https://github.com/YuraTadevosyan/article-builder',
+    site_link: 'https://yuratadevosyan.github.io/article-builder/#/dashboard',
+  },
+  {
+    name: 'GSAP Showcase',
+    description: 'GSAP Animations Showcase - High-performance GSAP animations for modern React. A curated collection of production-ready motion patterns. Mobile first, accessible, and tuned for great Core Web Vitals.',
+    tags: [
+      {
+        name: 'gsap',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'vite',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'typescript',
+        color: 'blue-text-gradient',
+      },
+    ],
+    image: gsap,
+    source_code_link: 'https://github.com/YuraTadevosyan/three-js-and-animations/tree/main/gsap-animations-showcase',
+    site_link: 'https://yuratadevosyan.github.io/three-js-and-animations/gsap-animations-showcase/',
   },
 ]
 

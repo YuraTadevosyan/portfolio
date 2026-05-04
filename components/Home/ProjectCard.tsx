@@ -31,7 +31,7 @@ const ProjectCard = ({ index, name, description, image, tags, source_code_link, 
       <Tilt
         scale={1}
         transitionSpeed={1000}
-        className="bg-tertiary p-5 rounded-2xl w-full sm:w-[360px]"
+        className="bg-tertiary p-5 rounded-2xl w-full sm:w-[360px] h-full flex flex-col"
       >
         <div
           className="relative w-full h-[200px]"
@@ -46,7 +46,7 @@ const ProjectCard = ({ index, name, description, image, tags, source_code_link, 
          	/>
 					
           <div className="absolute inset-0 flex justify-end m-3 card-img_hover">
-            {site_link ? (
+            {!!site_link && (
               <Link
                 href={site_link}
                 target="_blank"
@@ -60,7 +60,8 @@ const ProjectCard = ({ index, name, description, image, tags, source_code_link, 
                   height={20}
                 />
               </Link>
-            ) : (
+            )}
+            {!!source_code_link && (
               <Link
                 href={source_code_link}
                 target="_blank"
@@ -78,12 +79,12 @@ const ProjectCard = ({ index, name, description, image, tags, source_code_link, 
           </div>
         </div>
 					
-        <div className="mt-5">
+        <div className="mt-5 mb-4">
           <h3 className="text-white font-bold text-[24px]">{name}</h3>
           <p className="mt-2 text-secondary text-[14px]">{description}</p>
         </div>
 					
-        <div className="mt-4 flex flex-wrap gap-2">
+        <div className="h-full items-end flex flex-wrap gap-2">
           {tags.map((tag, index) => (
             <p
               key={index}

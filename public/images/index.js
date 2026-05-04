@@ -24,6 +24,10 @@ import aQuiz from './projects/aQuiz.webp'
 import aninfo from './projects/aninfo.webp'
 import imagePicker from './projects/imagePicker.webp'
 import liveDox from './projects/liveDox.webp'
+import textComparer from './projects/text-comparer.svg'
+import articleBuilder from './projects/article-builder.png'
+import euka from './projects/euka.png'
+import gsap from './projects/gsap.png'
 
 export {
   mobile,
@@ -51,5 +55,9 @@ export {
   aQuiz,
   aninfo,
   imagePicker,
-  liveDox
+  liveDox,
+  textComparer,
+  articleBuilder,
+  euka,
+  gsap
 }

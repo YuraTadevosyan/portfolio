@@ -27,7 +27,7 @@ import liveDox from './projects/liveDox.webp'
 import textComparer from './projects/text-comparer.svg'
 import articleBuilder from './projects/article-builder.png'
 import euka from './projects/euka.png'
-import gsap from './projects/gsap.png'
+import threeAnimations from './projects/three-animations.png'
 
 export {
   mobile,
@@ -59,5 +59,5 @@ export {
   textComparer,
   articleBuilder,
   euka,
-  gsap
+  threeAnimations
 }

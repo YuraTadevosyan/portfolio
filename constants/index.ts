@@ -25,7 +25,7 @@ import {
   textComparer,
   articleBuilder,
   euka,
-  gsap
+  threeAnimations
 } from '@/public/images'
 
 export const navLinks = [
@@ -331,25 +331,25 @@ const projects = [
     site_link: 'https://yuratadevosyan.github.io/article-builder/#/dashboard',
   },
   {
-    name: 'GSAP Showcase',
-    description: 'GSAP Animations Showcase - High-performance GSAP animations for modern React. A curated collection of production-ready motion patterns. Mobile first, accessible, and tuned for great Core Web Vitals.',
+    name: 'Three.js & Animations',
+    description: 'A small collection of frontend showcases - GSAP-powered motion, Three.js / WebGL scenes, and an audio-reactive visualizer. Each app is its own Vite build, deployed under this domain.',
     tags: [
       {
         name: 'gsap',
         color: 'green-text-gradient',
       },
       {
-        name: 'vite',
+        name: 'three.js',
         color: 'pink-text-gradient',
       },
       {
-        name: 'typescript',
+        name: 'WebGL',
         color: 'blue-text-gradient',
       },
     ],
-    image: gsap,
-    source_code_link: 'https://github.com/YuraTadevosyan/three-js-and-animations/tree/main/gsap-animations-showcase',
-    site_link: 'https://yuratadevosyan.github.io/three-js-and-animations/gsap-animations-showcase/',
+    image: threeAnimations,
+    source_code_link: 'https://github.com/YuraTadevosyan/three-js-and-animations/',
+    site_link: 'https://yuratadevosyan.github.io/three-js-and-animations/',
   },
 ]
 

@@ -18,8 +18,11 @@ import redux from './tech/redux.png'
 import tailwind from './tech/tailwind.png'
 import typescript from './tech/typescript.png'
 import threejs from './tech/threejs.svg'
-import esterox from './company/esterox.webp'
+import esterox from './company/esterox.png'
 import freelance from './company/upwork.webp'
+import eukaLogo from './company/euka.svg'
+import snappy from './company/snappy.png'
+import ppa from './company/ppa.svg'
 import aQuiz from './projects/aQuiz.webp'
 import aninfo from './projects/aninfo.webp'
 import imagePicker from './projects/imagePicker.webp'
@@ -52,6 +55,9 @@ export {
   threejs,
   esterox,
   freelance,
+  eukaLogo,
+  snappy,
+  ppa,
   aQuiz,
   aninfo,
   imagePicker,

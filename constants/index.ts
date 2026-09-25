@@ -25,6 +25,9 @@ import {
   textComparer,
   articleBuilder,
   euka,
+  eukaLogo,
+  snappy,
+  ppa,
   threeAnimations
 } from '@/public/images'
 
@@ -128,29 +131,70 @@ const technologies = [
 
 const experiences = [
   {
-    title: 'Front End Developer',
+    title: 'Frontend Developer',
     company_name: 'Esterox LLC',
     icon: esterox,
     iconBg: '#383E56',
     date: 'Jan 2021 - Apr 2023',
     points: [
-      'Developing and maintaining web applications using React.js, Vue.js and other related technologies.',
-      'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
-      'Implementing responsive design and ensuring cross-browser compatibility.',
-      'Participating in code reviews and providing constructive feedback to other developers.',
+      'Developed and maintained production-grade web applications using Vue.js/Nuxt.js and React/Next.js as part of the frontend engineering team.',
+      'Implemented SSR solutions to improve SEO and initial load performance.',
+      'Built reusable UI components, integrated backend APIs, and optimized application performance and maintainability.',
+      'Collaborated closely with cross-functional teams to deliver complex features while ensuring high code quality, responsiveness, and compatibility across modern browsers.',
     ],
   },
   {
-    title: 'Front End Developer',
-    company_name: 'Upwork - Freelance',
+    title: 'Frontend Developer',
+    company_name: 'Snappy Link Cushion',
+    icon: snappy,
+    iconBg: '#383E56',
+    date: 'Apr 2023 - Jun 2024',
+    points: [
+      'Contributed to the development of an SEO SaaS platform focused on backlink management and campaign automation.',
+      "Implemented new frontend features, enhanced existing workflows, and optimized the application's performance and maintainability.",
+      'Improved the user experience and refined dashboard interfaces.',
+      'Ensured seamless integration with backend services while delivering reliable, production-ready functionality.',
+    ],
+  },
+  {
+    title: 'Senior Frontend Developer',
+    company_name: 'Corporate Monkey',
     icon: freelance,
     iconBg: '#383E56',
-    date: 'Apr 2023 - Now',
+    date: 'Apr 2024 - Aug 2024',
     points: [
-      'Experience in building single-page (SPAs) and server side rendering (SSRs) applications.',
-      'Optimized web applications for performance and cross-browser compatibility.',
-      'Collaborated closely with designers and backend developers to deliver high-quality products.',
-      'Continuously learned and adapted to emerging technologies and best practices in front-end development.',
+      'Enhanced an existing production application by delivering UI improvements and modernizing the frontend codebase.',
+      'Refactored legacy components, improving code quality, performance, and maintainability.',
+      'Helped streamline the development workflow.',
+      'Handled application deployments through Vercel, ensuring stable production releases and efficient delivery of new features.',
+    ],
+  },
+  {
+    title: 'Senior Fullstack Developer',
+    company_name: 'Euka AI',
+    icon: eukaLogo,
+    iconBg: '#383E56',
+    date: 'Sep 2024 - Apr 2026',
+    points: [
+      'Worked on a production SaaS platform for TikTok Shop campaign management and analytics, including redesigning the application.',
+      'Implemented complex frontend features and integrated backend services with Supabase and PostgreSQL RPC functions.',
+      'Developed analytical dashboards, built scalable UI components, implemented real-time messaging, and automated Slack reporting.',
+      'Collaborated closely with backend engineers to deliver reliable, type-safe features.',
+      'Improved maintainability, reduced unnecessary network requests, and enhanced the overall user experience.',
+    ],
+  },
+  {
+    title: 'Senior Frontend Developer',
+    company_name: 'PPA',
+    icon: ppa,
+    iconBg: '#383E56',
+    date: 'Jun 2026 - Jul 2026',
+    points: [
+      'Contributed to the ongoing development and maintenance of the platform by implementing new features and enhancing existing functionality.',
+      "Optimized the application's codebase for better maintainability and performance.",
+      'Improved SEO through technical optimizations and metadata management, ensuring the website adhered to modern web standards.',
+      'Focused on responsive design, cross-browser compatibility, and delivering a fast, reliable user experience.',
+      'Collaborated with the team to ship production-ready updates.',
     ],
   },
 ]

@@ -27,8 +27,9 @@ const ExperienceCard = ({ visible, title, date, company_name, icon, iconBg, poin
             src={icon}
             alt={`Experience of ${company_name}`}
             className="w-[60%] h-[60%] object-contain rounded-full"
-            width="24"
-            height="24"
+            width="64"
+            height="64"
+            quality={100}
           />
         </div>
       }
